@@ -1,0 +1,211 @@
+body{
+    padding-top: 100px;
+    background-color: lightblue;
+}
+input[type="text"].form-control{
+    background-color:black !important;
+}
+#allPlaylists{
+    /*opacity: 0.5;*/
+}
+/*@keyframes spin{
+from { transform: rotate(0deg); }
+to { transform: rotate(360deg); }
+}
+@keyframes spin2 {
+from { transform: rotate(360deg); }
+to { transform: rotate(0deg); }
+}*/
+.divs{
+    height: 370px;
+    width: 370px;
+    margin: 45px;
+
+    border-radius: 50%;
+    animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+}
+.childDivs1{
+    height: 85px;
+    width: 85px;
+    top:50%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    animation-name: spin2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 50%;
+}
+.glyphicon-play{
+    top:50%;
+    left: 50%;
+    font-size: 50px;
+    margin-top: 0px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 17.5px;
+    border-radius: 50%;
+}
+.glyphicon-pencil{
+    top:10%;
+    left: 60%;
+    font-size: 20px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+.glyphicon-remove{
+    top:10%;
+    left: 40%;
+    font-size: 20px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+#rock{
+    /*background-image: url("../api/playlists/rock/rock.png");*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#pop{
+    /*background-image: url("../api/playlists/pop/pop.png");*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#jazz{
+    /*background-image: url("../api/playlists/jazz/jazz.png");*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#rap{
+    /*background-image: url("../api/playlists/rap/rap.png");*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#addNewPlaylist, #editPlaylist{
+    position: fixed;
+    background-color: white;
+    margin-top: 16%;
+    height: 300px;
+    z-index: 1;
+}
+#addNewPlaylistSongs{
+    position: fixed;
+    background-color: white;
+    margin-top: 16%;
+    height: 300px;
+    z-index: 1;
+}
+h4{
+    border-bottom: 1px solid grey;
+}
+button{
+    position: absolute;
+    bottom: 10px;
+}
+#playlistImg{
+    position: absolute;
+    height: 70%;
+    right: 10px;
+    top: 24%;
+    width: 50%;
+}
+#removePlaylistVerify{
+    position: fixed;
+    background-color: white;
+    margin-top: 16%;
+    height: 300px;
+    z-index: 1;
+}
+
+
+/* mediaPlayer*/
+/*.glyphicon-pause{
+top:50%;
+left: 50%;
+font-size: 50px;
+margin-top: 0px;
+position: absolute;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+background-color: white;
+padding: 17.5px;
+border-radius: 50%;
+}
+.glyphicon-pencil{
+top:57%;
+left: 10%;
+font-size: 20px;
+position: absolute;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+background-color: white;
+padding: 10px;
+border-radius: 50%;
+}
+.glyphicon-remove{
+top:43%;
+left: 10%;
+font-size: 20px;
+position: absolute;
+-webkit-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+background-color: white;
+padding: 10px;
+border-radius: 50%;
+}*/
+#d_play{
+    background-color: rgb(241, 96, 67);
+    /*border-radius: 30%;*/
+    /*border-top-right-radius: 30%;
+    border-top-left-radius: 30%;*/
+    border-radius: 230px 230px 230px 230px;
+}
+#d_edit{
+    /*background-color: black;*/
+    height: 460px;
+}
+#audioBox{
+    margin-left: 400px;
+    margin-top: 30px;
+    width: 350px;
+}
+.bold{
+    font-weight: bold;
+}
+audio::-webkit-media-controls-panel{
+    background-color: rgb(67, 67, 67);
+}
+audio::-webkit-media-controls-volume-slider{
+    background-color: white;
+}
+audio::-webkit-media-controls-timeline{
+    background-color: white;
+}
+audio::-webkit-media-controls-play-button, video::-webkit-media-controls-play-button {
+    -webkit-appearance: media-play-button;
+    display: -webkit-flex;
+    background-color: initial;
+    border: initial;
+    color: inherit;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>main</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="pull-left">
+                        <a href="#" id="addPlaylist">
+                            <span class="glyphicon glyphicon-plus-sign"></span>
+                            Add new playlist
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-form navbar-right">
+                    <li class="form-group has-feedback">
+                        <input type="text" class="form-control" placeholder="Search playlist">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+        <div class="row" id="allPlaylists">
+            <div class="row col-lg-offset-3 col-lg-4" id="addNewPlaylist">
+                <h4 class="col-lg-12">Add New Playlist</h4>
+                <img id="playlistImg" src="css/preview.png">
+                <label for="playlistName">Playlist Name</label><br>
+                <input type="text" name="playlistName" id="playlistName" placeholder="playlist name"><br>
+                <label for="playlistUrl">Playlist Url</label><br>
+                <input type="text" name="playlistUrl" id="playlistUrl" placeholder="link"><br>
+                <button type="button" class="col-lg-offset-2 btn btn-warning" id="resetFields">RESET FIELDS</button>
+                <button type="button" class="btn btn-warning" id="nextBtn">Next</button>
+            </div>
+            <div class="col-lg-offset-3 col-lg-4" id="addNewPlaylistSongs">
+                <h4 class="col-lg-12">Add New songs</h4>
+
+                <label for="songName1">song name</label>
+                <input type="text" name="songName1" id="songName1" placeholder="song name">
+                <label for="songUrl1">song url</label>
+                <input type="text" name="songUrl1" id="songUrl1" placeholder="link"><br>
+
+                <label for="songName2">song name</label>
+                <input type="text" name="songName2" id="songName2" placeholder="song name">
+                <label for="songUrl2">song url</label>
+                <input type="text" name="songUrl2" id="songUrl2" placeholder="link"><br>
+
+                <label for="songName3">song name</label>
+                <input type="text" name="songName3" id="songName3" placeholder="song name">
+                <label for="songUrl3">song url</label>
+                <input type="text" name="songUrl3" id="songUrl3" placeholder="link"><br>
+
+                <button type="button" class="btn btn-warning" id="addPlaylistToDb">add</button>
+            </div>
+            <div class="row col-lg-offset-3 col-lg-4" id="editPlaylist">
+                <h4 class="col-lg-12">Edit Playlist</h4>
+                <img id="playlistImg" src="">
+                <label for="playlistName">Playlist Name</label><br>
+                <input type="text" name="playlistName" id="playlistName" placeholder=""><br>
+                <label for="playlistUrl">Playlist Url</label><br>
+                <input type="text" name="playlistUrl" id="playlistUrl" placeholder=""><br>
+                <button type="button" class="col-lg-offset-2 btn btn-warning" id="resetFields">RESET FIELDS</button>
+                <button type="button" class="btn btn-warning" id="nextBtn">Save</button>
+            </div>
+            <div class="row col-lg-offset-4 col-lg-4" id="removePlaylistVerify">
+                <button type="button" class="btn btn-warning" id="removePlaylist">yes</button>
+                <button type="button" class="col-lg-offset-2 btn btn-warning" id="dontRemovePlaylist">no</button>
+            </div>
+            <div class="row" id="mediaPlayer">
+                <div id="d_play" class="col-lg-offset-3 col-md-offset-3 col-lg-6 col-md-6">
+                    <div class="divs">
+                        <span class="glyphicon glyphicon-pause"></span>
+                        <div id="audioBox">
+                            <audio controls autoplay id="audioTag" style="height: 1.995;">
+
+                            </audio>
+                            <ol id="songsList">
+
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div id="d_edit" class="col-lg-3 col-md-3">
+                    <div >
+                        <span class="glyphicon glyphicon-pencil"></span>
+                        <span class="glyphicon glyphicon-remove"></span>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end of allPlaylists-->
+    </div> <!-- container-fluid -->
+</body>
+</html>
